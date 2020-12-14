@@ -1,0 +1,118 @@
+body{
+font-family: Verdana !Important;
+color:#fff;
+}
+
+.navbar-nav > li{
+display: inline-block !important;
+vertical-align: middle !important;
+}
+.navbar-header > li > a > img {
+width: 100%;
+height: auto;
+max-width: 300px;
+}
+#menu-size
+{
+	max-width: 576px !important;
+}
+.nav-item > a {
+	font-size:10px !important;
+	color:#fff !important;
+}
+.dark {
+    background-color: #323232 !important;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+
+/* Styles */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Open Sans";
+  font-size: 14px;
+}
+
+#menu-size {
+  width: 500px;
+  margin: 25px auto;
+}
+#white{
+	background:#fff !important;
+}
+
+form {
+  
+  
+  color: #fff;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+}
+form textarea{
+   width: 100%;
+   background: #343a40;
+   color: #fff;
+   padding: 0 6px;
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+   border-color: transparent;
+   resize:none;
+}
+
+form input{
+  border: 0;
+  margin-bottom: 10px;
+  display: block;
+  width: 100%;
+}
+form input
+ {
+  height: 25px;
+  line-height: 25px;
+  background: #343a40;
+  color: #fff;
+  padding: 0 6px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+form button {
+  height: 40px;
+  width:100px;
+  
+  background: #5dbcd2;
+  color: #fff;
+  margin: 10px 0 20px;
+  cursor: pointer;
+  float:right;
+  border:none;
+  font-size:12px;
+}
+form .error {
+  color: #ff0000;
+}
+#triangle {
+	width: 0;
+	height: 0;
+	border-left: 30px solid transparent;
+	border-right: 30px solid transparent;
+	border-top: 21px solid #323232;
+	margin: -25px auto 0;
+}
+
+#blue
+{background:#5dbcd2!Important;}
+.green{
+	color:#2e8b57!Important;
+}
+.dark2{
+color:#343a40;}
+.black{
+	background:#000;}
+}
