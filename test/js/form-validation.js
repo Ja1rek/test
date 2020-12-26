@@ -1,35 +1,40 @@
 // Wait for the DOM to be ready
-$(function() {
-  // Initialize form validation on the registration form.
-  // It has the name attribute "registration"
-  $("form[name='registration']").validate({
-    // Specify validation rules
-    rules: {
-      // The key name on the left side is the name attribute
-      // of an input field. Validation rules are defined
-      // on the right side
-      name: "required",
-      
-      email: {
-        required: true,
-        // Specify that email should be validated
-        // by the built-in "email" rule
-        email: true
-      },
-      subiect:"required",
-	  message:"required"
-    },
-    // Specify validation error messages
-    messages: {
-      name: "Please enter your firstname",
-      subiect: "Please enter your subiect",
-      email: "Please enter a valid email address",
-	  message: "Please enter your message"
-    },
-    // Make sure the form is submitted to the destination defined
-    // in the "action" attribute of the form when valid
-    submitHandler: function(form) {
-      form.submit();
-    }
+$(document).ready(function() {
+  jQuery.validator.addMethod("customEmail", function(value, element) {
+             return this.optional(element) || /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/i.test(value);
+            }, "Please enter valid email address!");
+
+  $("#main").validate({
+   
+        
+             rules: {
+                 email:{
+                     required:true,
+                     customEmail:true
+                 },
+				 name:{
+					 required:true
+				 },
+				 subiect:{
+					 required:true,
+					 maxlength: 60
+				 },
+				 message:{
+					 required:true
+				 }
+				 
+             },
+			  messages: {
+				name: "Please enter your name",
+				lastname: "Please enter your lastname",
+				message:"Please enter your message",
+				subiect: 
+				{
+					required: "Please enter your subiect",
+					maxlength: "Your subiectmust be max 60 characters long"
+				}
+			  }
+        
+    
   });
 });
