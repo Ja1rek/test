@@ -1,10 +1,19 @@
 body{
+
 font-family: Verdana !Important;
 color:#fff;
+font-size: 14px;
 }
 .nav-link img
 {
 	margin:0 auto;
+}
+.img-responsive
+{
+    display: block;
+    width: 100%;
+    height: auto;
+	margin: 0 auto;
 }
 #navbar-size
 {
@@ -31,18 +40,15 @@ max-width: 300px;
     background-color: #323232 !important;
 }
 
-@import url("https://fonts.googleapis.com/css?family=Open+Sans");
 
-/* Styles */
+
+
 * {
   margin: 0;
   padding: 0;
 }
 
-body {
-  font-family: "Open Sans";
-  font-size: 14px;
-}
+
 
 .menu-size {
   width: 532px;
@@ -119,8 +125,13 @@ form .error {
 .green{
 	color:#2e8b57!Important;
 }
-.dark2{
-color:#343a40;}
+.dark2
+{
+color:#343a40;
+margin-left:5%;
+margin-top:10px;
+margin-bottom:10px;
+}
 .black{
 	background:#000;}
 }
@@ -130,7 +141,7 @@ color:#343a40;}
 }
 .carousel-item{
     text-align: center;
-    min-height: 280px; /* Prevent carousel from being distorted if for some reason image doesn't load */
+    min-height: 280px; 
 }
 .carousel-control-prev-icon,
 .carousel-control-next
@@ -182,4 +193,41 @@ margin-right:0;
 #main
 {
 	padding:35px 0;
+}
+.saicons
+{
+	margin-left:-5px;
+}
+.sabox
+{
+	width:150px;
+	float:right;
+}
+p
+{
+	text-align: justify;
+}
+
+@media (max-width: 574px) 
+{ 
+	.menu-size 
+	{
+		width: 100%;
+		
+	}
+	.row
+	{
+		width:100%;
+		margin-left:0;
+		margin-right:0;
+	}
+	#navbar-size,.navbar-nav > li 
+	{
+		width: 100%;
+	}
+	.nav-item > a
+	{
+		line-height:20px;
+	}
+	
 }
